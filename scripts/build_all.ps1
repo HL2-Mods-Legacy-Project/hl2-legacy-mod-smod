@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "SMOD_4.0" `
+  -ModName "SMOD 4.0" `
+  -ModFolder "smod" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/smod/smod40_full-Original.zip" `
+  -ModBaseFilesUrlHash "e0c3fc3188acb062d10d109853cd2164842ba055da9394ce566f15fbeace10af" `
+  -ModReadmePath "readme.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
